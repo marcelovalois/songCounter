@@ -4,7 +4,7 @@ from difflib import SequenceMatcher
 def sequenceMatcher(str1, str2):
     return SequenceMatcher(a=str1.lower(), b=str2.lower()).ratio()
 
-file1 = open('song-list-2.txt', 'r')
+file1 = open('songs.txt', 'r')
 songList = file1.readlines()
 
 dict = defaultdict(lambda: 0)
